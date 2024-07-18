@@ -6,6 +6,18 @@
 */
 (function() {
   "use strict";
+   /**
+   * Preloader function
+   */
+  
+  let preloader = select('#preloader');
+  if (preloader) {
+    window.addEventListener('load', () => {
+      preloader.remove()
+    });
+  }
+
+
 
   /**
    * Easy selector helper function
