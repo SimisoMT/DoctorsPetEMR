@@ -4,21 +4,21 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-(function() {
-  "use strict";
+
    /**
    * Preloader function
    */
   
-  let preloader = select('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove()
-    });
-  }
+   let preloader = select('#preloader');
+   if (preloader) {
+     window.addEventListener('load', () => {
+       preloader.remove()
+     });
+   }
 
 
-
+(function() {
+  "use strict";
   /**
    * Easy selector helper function
    */
