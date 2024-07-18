@@ -5,6 +5,7 @@
       --pink: rgb(237, 127, 127);
       --pink-darker: rgb(236, 82, 82);
       --yellow : rgb(232, 159, 33);
+      --light-dark : rgb(#212529);
 }
 /*--------------------------------------------------------------
 # Preloader
@@ -17,11 +18,11 @@
     bottom: 0;
     z-index: 9999;
     overflow: hidden;
-    background: var(--pink);
+    background: var(--light-dark);
   }
   
   #preloader:before {
-    content: "";
+    content: url('./assets/img/logo/preloader-animation-logo.gif');
     position: fixed;
     top: calc(50% - 30px);
     left: calc(50% - 30px);
@@ -35,23 +36,5 @@
     animation: animate-preloader 1s linear infinite;
   }
   
-  @-webkit-keyframes animate-preloader {
-    0% {
-      transform: rotate(0deg);
-    }
-  
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  @keyframes animate-preloader {
-    0% {
-      transform: rotate(0deg);
-    }
-  
-    100% {
-      transform: rotate(360deg);
-    }
-  }
+
   
