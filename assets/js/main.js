@@ -5,18 +5,6 @@
 * License: https://bootstrapmade.com/license/
 */
 
-   /**
-   * Preloader function
-   */
-  
-   let preloader = select('#preloader');
-   if (preloader) {
-     window.addEventListener('load', () => {
-       preloader.remove()
-     });
-   }
-
-
 (function() {
   "use strict";
   /**
@@ -198,6 +186,17 @@
             select('#petient-signup-password-create').classList.remove("is-valid");
           }
         })
+
+    /**
+   * Preloader function
+   */
+  
+      let preloader = select('#preloader');
+      if (preloader) {
+        window.addEventListener('load', () => {
+          preloader.remove()
+        });
+      }
 
   
 })()
